@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeynep Kılıçarslan | Bilgisayar Mühendisliği Öğrencisi &amp; Yazılımcı Portfolyosu</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Zeynep Kılıçarslan - Gaziantep İslam Bilim ve Teknoloji Üniversitesi Bilgisayar Mühendisliği 2. Sınıf Öğrencisi. C, Python, Arduino ve Siber Güvenlik odaklı kişisel yazılımcı portfolyosu.">
+  <meta name="keywords" content="Zeynep Kılıçarslan, Bilgisayar Mühendisliği, Yazılım Geliştirici, C, Python, Arduino, Siber Güvenlik, Portfolyo, GİBTÜ">
+  <meta name="author" content="Zeynep Kılıçarslan">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#080B14">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zeynepklcrsln.github.io/">
+  <meta property="og:title" content="Zeynep Kılıçarslan | Yazılımcı Portfolyosu">
+  <meta property="og:description" content="Bilgisayar Mühendisliği 2. sınıf öğrencisi. C, Python, Arduino ve Siber Güvenlik çalışmaları.">
+  <meta property="og:image" content="assets/favicon.svg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zeynep Kılıçarslan | Yazılımcı Portfolyosu">
+  <meta name="twitter:description" content="Bilgisayar Mühendisliği 2. sınıf öğrencisi. C, Python, Arduino ve Siber Güvenlik çalışmaları.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" href="assets/favicon.svg">
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Particle / Grid Canvas -->
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Skip to Content for Accessibility -->
+  <a href="#hero" class="skip-link">İçeriğe Atla</a>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <nav class="nav-container" aria-label="Ana Navigasyon">
+      <a href="#hero" class="brand-logo" aria-label="Zeynep Kılıçarslan Ana Sayfa">
+        <span class="logo-bracket">&lt;</span><span class="logo-name">ZK</span><span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#hero" class="nav-link active">Ana Sayfa</a></li>
+        <li class="nav-item"><a href="#hakkimda" class="nav-link">Hakkımda</a></li>
+        <li class="nav-item"><a href="#yetenekler" class="nav-link">Yetenekler</a></li>
+        <li class="nav-item"><a href="#egitim" class="nav-link">Eğitim</a></li>
+        <li class="nav-item"><a href="#sertifikalar" class="nav-link">Sertifikalar</a></li>
+        <li class="nav-item"><a href="#projeler" class="nav-link">Projeler</a></li>
+        <li class="nav-item"><a href="#iletisim" class="nav-link">İletişim</a></li>
+      </ul>
+
+      <!-- Nav Action Items -->
+      <div class="nav-actions">
+        <a href="https://github.com/zeynepklcrsln" target="_blank" rel="noopener noreferrer" class="nav-github-btn" aria-label="GitHub Profilimi Aç">
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span class="github-text">GitHub</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Menüyü Aç/Kapat" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="pulse-dot"></span>
+            <span>Öğrenmeye &amp; Gelişime Açık</span>
+          </div>
+
+          <h1 class="hero-title reveal">
+            Merhaba, Ben <br>
+            <span class="text-gradient">Zeynep Kılıçarslan.</span>
+          </h1>
+
+          <div class="hero-subtitle reveal">
+            <span class="subtitle-static">Bilgisayar Mühendisliği Öğrencisi | </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description reveal">
+            Teknolojiye olan ilgimi kodlara dönüştürüyor, yazılım geliştirme ve siber güvenlik alanlarında kendimi sürekli geliştiriyorum.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta reveal">
+            <a href="#projeler" class="btn btn-primary">
+              <span>Projelerimi Keşfet</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="#iletisim" class="btn btn-secondary">
+              <span>Benimle İletişime Geç</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+
+            <a href="https://github.com/zeynepklcrsln" target="_blank" rel="noopener noreferrer" class="btn-icon-link" aria-label="GitHub Profilime Git">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="hakkimda">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">// 01. Profilim</span>
+          <h2 class="section-title">Hakkımda</h2>
+          <div class="section-line"></div>
+          <p class="section-lead">
+            Yazılım dünyasının temellerini sağlam bir mühendislik vizyonu ile birleştiriyorum.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrative Story Column -->
+          <div class="about-story glass-card reveal">
+            <div class="card-glow"></div>
+            <div class="about-story-header">
+              <div class="badge-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3 class="story-title">Merhaba, Ben Zeynep!</h3>
+                <span class="story-subtitle">Bilgisayar Mühendisliği 2. Sınıf Öğrencisi</span>
+              </div>
+            </div>
+
+            <div class="about-story-text">
+              <p>
+                <strong>Gaziantep İslam Bilim ve Teknoloji Üniversitesi</strong> Bilgisayar Mühendisliği 2. sınıf öğrencisiyim. Yazılım dünyasına adım attığım ilk günden bu yana hem teorik temelleri hem de pratik uygulamaları derinlemesine öğrenmeye odaklanıyorum.
+              </p>
+              <p>
+                Düşük seviyeli bellek yönetimi ve sistem mantığını kavramak için <strong>C programlama diline</strong>, algoritmik düşünceyi hızlı ve etkili prototiplere dönüştürmek için ise <strong>Python programlama diline</strong> hakimim.
+              </p>
+              <p>
+                Yazılımın fiziksel dünyayla buluştuğu noktaları deneyimlemek amacıyla <strong>Arduino eğitimi aldım ve sertifikamı tamamladım</strong>. Donanım ve gömülü sistemlerin işleyiş mantığı, problem çözme perspektifimi zenginleştirdi.
+              </p>
+              <p>
+                Özellikle <strong>siber güvenlik</strong> alanına büyük bir ilgi duyuyor, sistemlerin nasıl korunduğunu, zaafiyetlerin nasıl tespit edildiğini ve güvenli kod yazma ilkelerini aktif olarak öğreniyorum. Yeni teknolojiler araştırmayı, analitik düşünmeyi ve özgün projeler üretmeyi tutkuyla sürdürüyorum.
+              </p>
+            </div>
+
+            <div class="about-quote">
+              <svg class="quote-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+              <span>"Sürekli öğrenmek, sağlam temeller kurmak ve güvenli geleceği kodlamak."</span>
+            </div>
+          </div>
+
+          <!-- Feature Cards Column -->
+          <div class="about-cards-container">
+            
+            <div class="info-card glass-card reveal">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Akademik Durum</span>
+                <h4 class="info-card-title">GİBTÜ Bilgisayar Mühendisliği</h4>
+                <p class="info-card-desc">Gaziantep İslam Bilim ve Teknoloji Üniversitesi'nde 2. sınıf lisans eğitimi.</p>
+              </div>
+            </div>
+
+            <div class="info-card glass-card reveal">
+              <div class="info-card-icon accent-blue">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Yazılım Dilleri</span>
+                <h4 class="info-card-title">C &amp; Python Hakimiyeti</h4>
+                <p class="info-card-desc">Algoritmalar, veri yapıları ve otomasyon scriptleri için aktif kullanım.</p>
+              </div>
+            </div>
+
+            <div class="info-card glass-card reveal">
+              <div class="info-card-icon accent-purple">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Donanım &amp; Gömülü</span>
+                <h4 class="info-card-title">Arduino Eğitimi &amp; Sertifikası</h4>
+                <p class="info-card-desc">Sensör entegrasyonu, mikrodenetleyici programlama ve prototip üretimi.</p>
+              </div>
+            </div>
+
+            <div class="info-card glass-card reveal">
+              <div class="info-card-icon accent-shield">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="M9 12l2 2 4-4"></path>
+                </svg>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Odak &amp; Gelişim</span>
+                <h4 class="info-card-title">Siber Güvenlik Eğilimi</h4>
+                <p class="info-card-desc">Ağ güvenliği, zaafiyet tespiti ve savunma mekanizmalarında aktif gelişim süreci.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="yetenekler">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">// 02. Yetkinlikler</span>
+          <h2 class="section-title">Teknik Yeteneklerim</h2>
+          <div class="section-line"></div>
+          <p class="section-lead">
+            Mevcut teknik uzmanlıklarım ve aktif olarak kendimi geliştirdiğim araştırma alanları.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Programlama Dilleri -->
+          <div class="skill-category-card glass-card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Programlama Dilleri</h3>
+                <span class="category-status status-active">Mevcut Beceriler</span>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              
+              <!-- Skill: C -->
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <div class="tech-icon c-icon">
+                    <span>C</span>
+                  </div>
+                  <div class="tech-info">
+                    <h4 class="tech-name">C Programlama</h4>
+                    <span class="tech-type">Düşük Seviyeli Sistem &amp; Algoritma</span>
+                  </div>
+                  <span class="tech-badge">Yetkin</span>
+                </div>
+                <p class="skill-item-desc">
+                  İşaretçiler (pointers), bellek yönetimi (malloc/free), dinamik veri yapıları ve sistem düzeyi algoritmalar.
+                </p>
+              </div>
+
+              <!-- Skill: Python -->
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <div class="tech-icon python-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+                      <path d="M8 12h8"></path>
+                      <path d="M12 8v8"></path>
+                    </svg>
+                  </div>
+                  <div class="tech-info">
+                    <h4 class="tech-name">Python</h4>
+                    <span class="tech-type">Genel Amaçlı &amp; Otomasyon</span>
+                  </div>
+                  <span class="tech-badge">Yetkin</span>
+                </div>
+                <p class="skill-item-desc">
+                  Hızlı prototipleme, veri manipülasyonu, otomasyon betikleri ve temel güvenlik araçları kurgulama.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 2: Donanım ve Elektronik -->
+          <div class="skill-category-card glass-card reveal">
+            <div class="category-header">
+              <div class="category-icon accent-blue">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <circle cx="9" cy="9" r="1.5"></circle>
+                  <circle cx="15" cy="9" r="1.5"></circle>
+                  <circle cx="9" cy="15" r="1.5"></circle>
+                  <circle cx="15" cy="15" r="1.5"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Donanım ve Elektronik</h3>
+                <span class="category-status status-certified">Eğitim &amp; Sertifikalı</span>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              
+              <!-- Skill: Arduino -->
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <div class="tech-icon arduino-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="8" cy="12" r="5"></circle>
+                      <circle cx="16" cy="12" r="5"></circle>
+                      <line x1="6" y1="12" x2="10" y2="12"></line>
+                      <line x1="14" y1="12" x2="18" y2="12"></line>
+                      <line x1="16" y1="10" x2="16" y2="14"></line>
+                    </svg>
+                  </div>
+                  <div class="tech-info">
+                    <h4 class="tech-name">Arduino</h4>
+                    <span class="tech-type">Gömülü Sistemler &amp; Mikrodenetleyici</span>
+                  </div>
+                  <span class="tech-badge cert-badge">Sertifikalı</span>
+                </div>
+                <p class="skill-item-desc">
+                  Devre tasarımı, sensör ve aktüatör entegrasyonu, I/O pin kontrolü ve C/C++ tabanlı gömülü kodlama.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 3: İlgi ve Gelişim Alanları -->
+          <div class="skill-category-card glass-card reveal category-highlight">
+            <div class="category-header">
+              <div class="category-icon accent-shield">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">İlgi ve Gelişim Alanları</h3>
+                <span class="category-status status-learning">Aktif Öğrenme &amp; Gelişim</span>
+              </div>
+            </div>
+
+            <div class="growth-cards-grid">
+              
+              <!-- Sub item: Siber Güvenlik -->
+              <div class="growth-item focus-highlight">
+                <div class="growth-item-top">
+                  <div class="growth-icon cyber-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </div>
+                  <span class="growth-tag-pulse">Aktif Gelişim Alanım</span>
+                </div>
+                <h4 class="growth-title">Siber Güvenlik</h4>
+                <p class="growth-desc">
+                  Temel ağ güvenliği, sistem zafiyetleri, güvenli yazılım geliştirme prensipleri ve savunma yaklaşımları.
+                </p>
+              </div>
+
+              <!-- Sub item: Yazılım Geliştirme -->
+              <div class="growth-item">
+                <div class="growth-item-top">
+                  <div class="growth-icon dev-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="4 17 10 11 4 5"></polyline>
+                      <line x1="12" y1="19" x2="20" y2="19"></line>
+                    </svg>
+                  </div>
+                </div>
+                <h4 class="growth-title">Yazılım Geliştirme</h4>
+                <p class="growth-desc">
+                  Modüler kod mimarisi, sürüm kontrolü (Git/GitHub) ve temiz kod (Clean Code) standartları.
+                </p>
+              </div>
+
+              <!-- Sub item: Problem Çözme -->
+              <div class="growth-item">
+                <div class="growth-item-top">
+                  <div class="growth-icon problem-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                      <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                    </svg>
+                  </div>
+                </div>
+                <h4 class="growth-title">Problem Çözme</h4>
+                <p class="growth-desc">
+                  Karmaşık mühendislik problemlerini küçük, yönetilebilir ve test edilebilir parçalara ayrıştırma yetisi.
+                </p>
+              </div>
+
+              <!-- Sub item: Algoritmik Düşünme -->
+              <div class="growth-item">
+                <div class="growth-item-top">
+                  <div class="growth-icon algo-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <h4 class="growth-title">Algoritmik Düşünme</h4>
+                <p class="growth-desc">
+                  Hesaplamalı karmaşıklık analizi, veri yapıları seçimi ve optimizasyon odaklı mühendislik yaklaşımı.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="egitim">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">// 03. Akademik</span>
+          <h2 class="section-title">Eğitim Yolculuğum</h2>
+          <div class="section-line"></div>
+          <p class="section-lead">
+            Mühendislik temellerini edindiğim üniversite eğitimim ve akademik gelişim sürecim.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <div class="timeline-item reveal">
+            <!-- Timeline Center Marker -->
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-pulse"></div>
+            </div>
+
+            <!-- Timeline Content Card -->
+            <div class="timeline-card glass-card">
+              <div class="timeline-card-header">
+                <div class="timeline-meta">
+                  <span class="timeline-status-pill">
+                    <span class="pill-dot"></span> Aktif Öğrenim
+                  </span>
+                  <span class="timeline-grade">2. Sınıf Öğrencisi</span>
+                </div>
+                <h3 class="timeline-institution">Gaziantep İslam Bilim ve Teknoloji Üniversitesi</h3>
+                <h4 class="timeline-degree">Bilgisayar Mühendisliği (Lisans)</h4>
+              </div>
+
+              <div class="timeline-body">
+                <p>
+                  Gaziantep İslam Bilim ve Teknoloji Üniversitesi Bilgisayar Mühendisliği Bölümü'nde lisans eğitimimi sürdürmekteyim. Eğitim sürecimde bilgisayar bilimlerinin çekirdek disiplinleri, matematiksel modelleme ve yazılım mühendisliği metodolojileri üzerine kapsamlı bir müfredat takip ediyorum.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Bilgisayar Bilimleri Temelleri</span>
+                  <span class="tag">Algoritmalar &amp; Programlama</span>
+                  <span class="tag">Mühendislik Matematiği</span>
+                  <span class="tag">Mantıksal Devre Tasarımı</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATES & TRAININGS SECTION -->
+    <section class="section cert-section" id="sertifikalar">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">// 04. Sertifikalar</span>
+          <h2 class="section-title">Sertifikalar &amp; Eğitimler</h2>
+          <div class="section-line"></div>
+          <p class="section-lead">
+            Tamamlanan resmi sertifikalar ve aktif olarak devam eden uzmanlaşma eğitimleri.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          
+          <!-- Certificate Card 1: Arduino (Completed) -->
+          <div class="cert-card glass-card reveal">
+            <div class="cert-card-top">
+              <div class="cert-badge verified">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span>Tamamlandı &amp; Sertifikalı</span>
+              </div>
+              <span class="cert-field-tag">Donanım &amp; Gömülü Sistemler</span>
+            </div>
+
+            <h3 class="cert-title">Arduino Eğitimi &amp; Sertifikası</h3>
+            <p class="cert-desc">
+              Mikrodenetleyici mimarisi, sensör kullanımı, dijital/analog sinyal işleme ve devre tasarımı odaklı uygulamalı eğitim başarıyla tamamlanmış ve sertifikası alınmıştır.
+            </p>
+
+            <!-- Certificate Image Placeholder Frame -->
+            <div class="cert-preview-frame" id="cert-placeholder-frame">
+              <img src="assets/arduino-cert-placeholder.svg" alt="Arduino Eğitimi Başarı Sertifikası Önizleme Alanı" class="cert-image" loading="lazy">
+              <div class="cert-preview-overlay">
+                <div class="overlay-badge">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  <span>Sertifika Görsel Alanı</span>
+                </div>
+                <p class="overlay-note">Gerçek sertifika görselinizi bu alana ekleyebilirsiniz.</p>
+              </div>
+            </div>
+
+            <div class="cert-footer">
+              <div class="cert-meta-item">
+                <span class="meta-label">Yetkinlik Alanı:</span>
+                <span class="meta-val">Mikrodenetleyici &amp; Sensör Programlama</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Training Card 2: Siber Güvenlik (In Progress) -->
+          <div class="cert-card glass-card reveal cert-card-progress">
+            <div class="cert-card-top">
+              <div class="cert-badge in-progress">
+                <span class="pulse-indicator"></span>
+                <span>Devam Eden Eğitim &amp; Öğrenim</span>
+              </div>
+              <span class="cert-field-tag">Bilgi Güvenliği</span>
+            </div>
+
+            <h3 class="cert-title">Siber Güvenlik Eğitimi &amp; Gelişim Süreci</h3>
+            <p class="cert-desc">
+              Siber güvenlik ekosisteminde sağlam bir temel inşa etmek amacıyla devam eden teorik ve pratik öğrenim sürecidir. Bu süreç henüz tamamlanmış bir sertifika değil, aktif çalışma ve araştırma alanıdır.
+            </p>
+
+            <div class="progress-highlights-card">
+              <div class="progress-box-header">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>Öğrenim Odak Noktaları</span>
+              </div>
+              <ul class="progress-checklist">
+                <li>
+                  <span class="check-bullet">▹</span>
+                  <span>Temel Ağ Protokolleri ve Ağ Güvenliği Kavramları</span>
+                </li>
+                <li>
+                  <span class="check-bullet">▹</span>
+                  <span>Web ve Sistem Zaafiyetleri Temelleri (OWASP)</span>
+                </li>
+                <li>
+                  <span class="check-bullet">▹</span>
+                  <span>Linux Ortamı ve Terminal Güvenlik Komutları</span>
+                </li>
+                <li>
+                  <span class="check-bullet">▹</span>
+                  <span>Güvenli Kod Geliştirme Yaklaşımları</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="cert-footer">
+              <div class="cert-meta-item">
+                <span class="meta-label">Durum:</span>
+                <span class="meta-val highlight-val">Aktif Araştırma &amp; Eğitim Sürecinde</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projeler">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">// 05. Portfolyo</span>
+          <h2 class="section-title">Projelerim</h2>
+          <div class="section-line"></div>
+          <p class="section-lead">
+            Üzerinde çalıştığım, mimarisini kurguladığım ve yakında burada sergileyeceğim çalışmalarım.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: Yazılım Projeleri -->
+          <div class="project-card glass-card reveal">
+            <div class="project-card-header">
+              <div class="project-badge-soon">
+                <span class="soon-dot"></span>
+                <span>Yakında</span>
+              </div>
+              <div class="project-category-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category-title">Yazılım Projeleri</span>
+              <h3 class="project-name">Algoritmik &amp; Temel Yazılım Mimarileri</h3>
+              <p class="project-desc">
+                C dili ile bellek yönetimi, dinamik veri yapıları ve hesaplamalı algoritmalar üzerine geliştirilen temel mühendislik uygulamaları.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">Veri Yapıları</span>
+                <span class="tech-tag">Algoritmalar</span>
+                <span class="tech-tag">Sistem Tasarımı</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="project-status-note">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Geliştirme Aşamasında</span>
+              </div>
+              <button class="btn-disabled" disabled aria-label="Proje Detayları Yakında Eklenecektir">
+                <span>Çok Yakında</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Python Projeleri -->
+          <div class="project-card glass-card reveal">
+            <div class="project-card-header">
+              <div class="project-badge-soon">
+                <span class="soon-dot"></span>
+                <span>Yakında</span>
+              </div>
+              <div class="project-category-icon accent-blue">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+                  <path d="M8 12h8"></path>
+                  <path d="M12 8v8"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category-title">Python Projeleri</span>
+              <h3 class="project-name">Otomasyon &amp; Güvenlik Betikleri</h3>
+              <p class="project-desc">
+                Python kullanılarak veri analizi, rutin görev otomasyonları ve temel siber güvenlik tarama testleri için tasarlanan projeler.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Otomasyon</span>
+                <span class="tech-tag">Scripting</span>
+                <span class="tech-tag">Siber Güvenlik</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="project-status-note">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Geliştirme Aşamasında</span>
+              </div>
+              <button class="btn-disabled" disabled aria-label="Proje Detayları Yakında Eklenecektir">
+                <span>Çok Yakında</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Arduino Projeleri -->
+          <div class="project-card glass-card reveal">
+            <div class="project-card-header">
+              <div class="project-badge-soon">
+                <span class="soon-dot"></span>
+                <span>Yakında</span>
+              </div>
+              <div class="project-category-icon accent-purple">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <circle cx="9" cy="9" r="1.5"></circle>
+                  <circle cx="15" cy="9" r="1.5"></circle>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category-title">Arduino Projeleri</span>
+              <h3 class="project-name">Gömülü Sistemler &amp; Sensör Prototipi</h3>
+              <p class="project-desc">
+                Arduino platformu üzerinde çeşitli sensörler ve aktüatörlerle fiziksel ortam verilerini işleyen akıllı gömülü sistem uygulamaları.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Arduino</span>
+                <span class="tech-tag">C / C++</span>
+                <span class="tech-tag">Sensörler</span>
+                <span class="tech-tag">Donanım Prototipleme</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="project-status-note">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Geliştirme Aşamasında</span>
+              </div>
+              <button class="btn-disabled" disabled aria-label="Proje Detayları Yakında Eklenecektir">
+                <span>Çok Yakında</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Future Project Insertion Helper Note (Hidden for screen readers if desired, visible for inspection) -->
+        <div class="projects-template-note reveal">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <span>Projeler tamamlandıkça kod yapısı içerisine yeni kartlar kolayca eklenebilecek şekilde modüler olarak hazırlanmıştır.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="iletisim">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">// 06. Bağlantı</span>
+          <h2 class="section-title">Benimle İletişime Geç</h2>
+          <div class="section-line"></div>
+          <p class="section-lead">
+            Yazılım, teknoloji ve yeni fikirler üzerine iletişim kurmak istersen benimle bağlantıya geçebilirsin.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Card 1: Email -->
+          <div class="contact-card glass-card reveal">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            
+            <h3 class="contact-card-title">E-posta Gönder</h3>
+            <p class="contact-card-desc">
+              Projeler, akademik iş birlikleri veya fikir alışverişi için doğrudan bana e-posta atabilirsin.
+            </p>
+
+            <a href="mailto:kilicarslanzeynep82@gmail.com" class="contact-value email-link" aria-label="kilicarslanzeynep82@gmail.com adresine e-posta gönder">
+              kilicarslanzeynep82@gmail.com
+            </a>
+
+            <div class="contact-card-actions">
+              <a href="mailto:kilicarslanzeynep82@gmail.com" class="btn btn-primary btn-sm">
+                <span>E-posta Uygulamasında Aç</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+
+              <button class="btn btn-secondary btn-sm" id="copy-email-btn" aria-label="E-posta Adresini Kopyala">
+                <span id="copy-btn-text">Adresi Kopyala</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Contact Card 2: GitHub -->
+          <div class="contact-card glass-card reveal">
+            <div class="contact-card-icon accent-blue">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </div>
+            
+            <h3 class="contact-card-title">GitHub Profili</h3>
+            <p class="contact-card-desc">
+              Açık kaynak kodlarımı, repolarımı ve sürdürdüğüm yazılım projelerini GitHub üzerinden inceleyebilirsin.
+            </p>
+
+            <a href="https://github.com/zeynepklcrsln" target="_blank" rel="noopener noreferrer" class="contact-value" aria-label="GitHub profiline git: github.com/zeynepklcrsln">
+              github.com/zeynepklcrsln
+            </a>
+
+            <div class="contact-card-actions">
+              <a href="https://github.com/zeynepklcrsln" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>Profili Görüntüle</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Quick Message Direct Box -->
+        <div class="quick-contact-box glass-card reveal">
+          <div class="quick-contact-header">
+            <div>
+              <h4 class="quick-title">Doğrudan Mesaj Oluştur</h4>
+              <p class="quick-subtitle">Konu ve mesajınızı yazarak tek tıkla e-posta uygulamanıza aktarın.</p>
+            </div>
+          </div>
+          <form id="quick-email-form" class="quick-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-subject">Konu</label>
+                <input type="text" id="contact-subject" placeholder="Örn: Proje İş Birliği / Merhaba" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-body">Mesajınız</label>
+              <textarea id="contact-body" rows="4" placeholder="Mesajınızı buraya yazabilirsiniz..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <span>E-posta Göndermeye Başla</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="Zeynep Kılıçarslan Ana Sayfa">
+            <span class="logo-bracket">&lt;</span><span class="logo-name">ZK</span><span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+          </a>
+          <p class="footer-bio">
+            Zeynep Kılıçarslan • Gaziantep İslam Bilim ve Teknoloji Üniversitesi Bilgisayar Mühendisliği 2. Sınıf Öğrencisi.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5 class="footer-heading">Hızlı Bağlantılar</h5>
+          <ul class="footer-links">
+            <li><a href="#hero">Ana Sayfa</a></li>
+            <li><a href="#hakkimda">Hakkımda</a></li>
+            <li><a href="#yetenekler">Yetenekler</a></li>
+            <li><a href="#egitim">Eğitim</a></li>
+            <li><a href="#sertifikalar">Sertifikalar</a></li>
+            <li><a href="#projeler">Projeler</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social-col">
+          <h5 class="footer-heading">Ağ &amp; Profil</h5>
+          <a href="https://github.com/zeynepklcrsln" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>GitHub: @zeynepklcrsln</span>
+          </a>
+          <a href="mailto:kilicarslanzeynep82@gmail.com" class="footer-social-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>kilicarslanzeynep82@gmail.com</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Zeynep Kılıçarslan. Tüm hakları saklıdır.
+        </p>
+
+        <!-- Back to Top Button -->
+        <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Sayfanın Başına Dön">
+          <span>Yukarı Dön</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container for Copied Items -->
+  <div class="toast-notification" id="toast-notify" role="alert" aria-live="polite">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-message">E-posta panoya kopyalandı!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
